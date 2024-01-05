@@ -601,7 +601,7 @@
                   </label>
                   <button class="subscribe-form-btn" type="submit">
                      Subscribe
-                     <svg class="subscribe-form-icon" weidth="24" height="24">
+                     <svg class="subscribe-form-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-send"></use>
                      </svg>
                   </button>
@@ -625,42 +625,68 @@
             </p>
             <form class="modal-form" name="modal">
                <div class="form-field">
-                  <label for="user_name"
-                     >Name
+                  <label for="user-name" class="form-label">Name </label>
+                  <div class="form-block">
                      <input
+                        id="user-name"
                         class="form-input"
-                        name="user_name"
+                        name="user-name"
                         type="text"
                         minlength="3"
                         required
                      />
-                     <svg class="form-icon" width="24" height="24">
+                     <svg class="form-icon" width="18" height="24">
                         <use href="./images/icons.svg#icon-people"></use>
                      </svg>
-                  </label>
+                  </div>
                </div>
                <div class="form-field">
-                  <label for="user_phone">
-                     <input class="form-input" name="user_tel" type="tel" />
-                     <svg class="form-icon" width="24" height="24">
+                  <label for="user-phone" class="form-label">Phone </label>
+                  <div class="form-block">
+                     <input class="form-input" name="user-tel" type="tel" />
+                     <svg class="form-icon" width="18" height="24">
                         <use href="./images/icons.svg#icon-phone"></use>
                      </svg>
-                  </label>
+                  </div>
                </div>
                <div class="form-filed">
-                  <label for="user_email">
+                  <label for="user-email" class="form-label">Email</label>
+                  <div class="form-block">
                      <input class="form-input" name="user_email" type="email" />
-                     <svg class="form-icon" width="24" height="24">
+                     <svg class="form-icon" width="18" height="24">
                         <use href="./images/icons.svg#icon-mail"></use>
                      </svg>
+                  </div>
+               </div>
+               <div class="form-filed comment-form">
+                  <label for="user-comment" class="form-label">Comment</label>
+                  <textarea
+                     class="form-comment"
+                     name="user-comment"
+                     id="user-comment"
+                     placeholder="Text input"
+                  ></textarea>
+               </div>
+               <div class="form-field form-check">
+                  <input
+                     id="user-privacy"
+                     type="checkbox"
+                     value="true"
+                     name="user-privacy"
+                     class="form-input"
+                     class="visually-hidden"
+                  />
+                  <label for="user-privacy" class="form-label"
+                     >I accept the terms and conditions of the
+                     <span class="label-span">
+                        <svg class="icon-check" width="10" height="8">
+                           <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                     </span>
+                     <a href="" class="privacy-form">Privacy Policy</a>
                   </label>
                </div>
-               <div class="form-filed">
-                  <label for="text">
-                     <input class="form-input" type="textarea" />
-                  </label>
-               </div>
-               <button type="submit"></button>
+               <button type="submit" class="submit-btn">Submit</button>
             </form>
          </div>
       </div>
