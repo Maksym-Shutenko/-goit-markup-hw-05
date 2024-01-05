@@ -588,7 +588,84 @@
                   </li>
                </ul>
             </div>
+            <div class="footer-wrapper">
+               <p class="wrapper-caption">Subscribe</p>
+               <form class="subscribe-form" name="subscribe">
+                  <label class="subscribe-form-field">
+                     <input
+                        type="email"
+                        placeholder="email"
+                        class="subscribe-form-input"
+                     />
+                     <button class="subscribe-form-btn" type="submit">
+                        Subscribe
+                        <svg
+                           class="subscribe-form-icon"
+                           weidth="24"
+                           height="24"
+                        >
+                           <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                     </button>
+                  </label>
+               </form>
+            </div>
          </div>
       </footer>
+      <div class="backdrop is-open">
+         <div class="modal">
+            <button
+               class="modal-btn"
+               type="button"
+               aria-label="modal close button"
+            >
+               <svg class="modal-btn-icon" width="28" height="28">
+                  <use href="./images/icons.svg#icon-close"></use>
+               </svg>
+            </button>
+            <p class="modal-caption">
+               Leave your contacts and we will call you back
+            </p>
+            <form class="modal-form" name="modal">
+               <div class="form-field">
+                  <label for="user_name"
+                     >Name
+                     <input
+                        class="form-input"
+                        name="user_name"
+                        type="text"
+                        minlength="3"
+                        required
+                     />
+                     <svg class="form-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-people"></use>
+                     </svg>
+                  </label>
+               </div>
+               <div class="form-field">
+                  <label for="user_phone">
+                     <input class="form-input" name="user_tel" type="tel" />
+                     <svg class="form-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                     </svg>
+                  </label>
+               </div>
+               <div class="form-filed">
+                  <label for="user_email">
+                     <input class="form-input" name="user_email" type="email" />
+                     <svg class="form-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                     </svg>
+                  </label>
+               </div>
+               <div class="form-filed">
+                  <label for="text">
+                     <input class="form-input" type="textarea" />
+                  </label>
+               </div>
+               <button type="submit"></button>
+            </form>
+         </div>
+      </div>
    </body>
 </html>
