@@ -671,15 +671,13 @@ input:focus + .form-icon {
    color: #4d5ae5;
    text-decoration-line: underline;
 }
-.checkbox {
-   visibility: hidden;
-}
-.checkbox:checked + .label-span {
+
+input:checked + .form-label > .label-span {
    background-color: #404bbf;
    border: none;
    fill: #f4f4fd;
 }
-.checkbox:checked + .label-span > .icon-check {
+.checkbox:checked + .form-label > .label-span > .icon-check {
    opacity: 1;
 }
 
