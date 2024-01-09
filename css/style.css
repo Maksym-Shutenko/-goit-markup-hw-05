@@ -1,3 +1,7 @@
+.hide {
+   display: none;
+}
+
 body {
    font-family: "Roboto", sans-serif;
    color: #434455;
@@ -47,13 +51,33 @@ img {
 .section {
    padding: 120px 0;
 }
+
+/** Container */
 .container {
-   width: 1158px;
-   padding-left: 15px;
-   padding-right: 15px;
+   max-width: 320px;
+   padding-left: 16px;
+   padding-right: 16px;
    margin-left: auto;
    margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+   .container {
+      max-width: 768px;
+   }
+}
+@media screen and (min-width: 1158px) {
+   .container {
+      max-width: 1158px;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+}
+
+/*width: 1158px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;*/
 
 .container-header {
    display: flex;
@@ -611,7 +635,8 @@ img {
 .form-comment:focus {
    border-color: #4d5ae5;
 }
-/** Custom checkbox */
+/*? Custom checkbox */
+
 .form-label {
    font-size: 12px;
    line-height: 1.17;
